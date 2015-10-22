@@ -8,12 +8,16 @@ app.listen(process.env.PORT || 5000);
 // var mw = require('nodemw');
 var Twit = require('twit');
 
-var T = new Twit({
-    consumer_key:         process.env['c_consumer']
-  , consumer_secret:      process.env['c_secret']
-  , access_token:         process.env['a_token']
-  , access_token_secret:  process.env['a_secret']
-});
+var conf = {
+  consumer_key:         process.env['c_consumer'],
+  consumer_secret:      process.env['c_secret'],
+  access_token:         process.env['a_token'],
+  access_token_secret:  process.env['a_secret']
+};
+
+console.dir(conf);
+
+var T = new Twit(conf);
 
 var HOW_MANY_MINUTES_N_STUFF = parseInt(process.env.timeout) || 20;
 
