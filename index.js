@@ -6,7 +6,7 @@ app.listen(process.env.PORT || 5000);
 // END HEROKU SETUP
 
 // var mw = require('nodemw');
-var twit = require('twit');
+var Twit = require('twit');
 
 var T = new Twit({
     consumer_key:         process.env['c_consumer']
