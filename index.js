@@ -15,7 +15,7 @@ var conf = {
   access_token_secret:  process.env['a_secret']
 };
 
-console.dir(conf);
+//console.dir(conf);
 
 var T = new Twit(conf);
 
@@ -191,7 +191,7 @@ var titles = [
     "I've known my mom since I was zero years old. She is quite dope.",
     "I wonder... Would you rather have 100 from an average person or 10 from someone who is outstanding",
     "George Bush doesn't care about black people.",
-    "the things that don't kill me makes me stronger",
+    "The things that don't kill me makes me stronger",
     "I just needed time alone with my own thoughts, got treasures in my mind but couldn’t open up my own vault",
     "Have you ever had sex with a Pharaoh? I put the pussy in a sarcophagus",
     "I don’t understand why they trippin’, if you ask me, Flow is just as nice as, I admit the propane, I just spit, probably, Just raise the gas prices, everybody in the club, Try and get as fresh as me, what you want dog, trying to stay recession free, and spit, refreshly, ",
