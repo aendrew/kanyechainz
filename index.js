@@ -5,7 +5,7 @@ app.get('/', function(req, res){ res.send('The robot is happily running.'); });
 app.listen(process.env.PORT || 5000);
 // END HEROKU SETUP
 
-var mw = require('nodemw');
+// var mw = require('nodemw');
 var twit = require('twit');
 
 var T = new Twit({
