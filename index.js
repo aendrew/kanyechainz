@@ -216,7 +216,7 @@ var titles = [
 
 setInterval(function(){
   var quote = generateChainz(titles);
-  T.post('statuses/update', {status: quote + ' — Kanye Markov West'}, function(err, data, res){
+  T.post('statuses/update', {status: quote}, function(err, data, res){
     if (err) {
       console.log(err);
     } else {
